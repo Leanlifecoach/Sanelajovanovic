@@ -1,256 +1,215 @@
-/* ======== OSNOVNI STIL ======== */
+/* ===== GLOBALNE POSTAVKE ===== */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #fffafa;
   color: #333;
-  line-height: 1.6;
+  background-color: #fffaf8;
 }
 
-/* ======== NAVIGACIJA ======== */
+/* ===== NAVIGACIJA ===== */
 header {
-  background-color: #ea9999;
-  color: white;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
   z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 15px 40px;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  align-items: center;
+  padding: 15px 50px;
 }
 
 .logo {
-  font-family: "Dancing Script", cursive;
+  font-family: "Brush Script MT", cursive;
   font-size: 28px;
-  font-weight: bold;
-  color: #ffd700;
+  color: #d4af37; /* Zlatna boja potpisa */
+  margin: 0;
 }
 
-.logo span {
-  display: block;
-  font-size: 14px;
-  color: white;
-  letter-spacing: 2px;
-}
-
-nav ul {
+.nav-links {
   list-style: none;
+  display: flex;
+  gap: 25px;
   margin: 0;
   padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: #ea9999;
+  transform: translateY(-2px);
+}
+
+/* ===== HERO SEKCIJA ===== */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #ea9999;
+  color: white;
+}
+
+.hero-content {
   display: flex;
   flex-wrap: wrap;
-  justifz-content: flex-end;
-  gap: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  color: #ffd700;
-  transform: scale(1.05);
-}
-
-/* ======== HERO SEKCIJA ======== */
-.hero {
-  margin-top: 120px;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 60px;
-  background: linear-gradient(to right, #fbeaea, #fff);
-}
-
-.hero-text {
-  max-width: 500px;
-  padding-right: 30px;
-}
-
-.hero-text h1 {
-  color: #ea9999;
-  font-size: 42px;
-}
-
-.hero-text p {
-  margin: 20px 0;
-  font-size: 18px;
-}
-
-.dugme {
-  display: inline-block;
-  border: 2px solid #ea9999;
-  color: #ea9999;
-  padding: 10px 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-  text-transform: uppercase;
-}
-
-.dugme:hover {
-  background-color: #ea9999;
-  color: white;
-}
-
-/* ======== SEKCIJE ======== */
-section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-section h2 {
-  color: #ea9999;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.program {
-  margin: 30px auto;
-  max-width: 800px;
-  background-color: #fff6f6;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-/* ======== BLOG I BESPLATNO ======== */
-.blog-item, .besplatno-item {
-  margin: 20px auto;
-  max-width: 700px;
-  border: 1px solid #f5c6c6;
-  border-radius: 10px;
-  padding: 20px;
-  background: white;
-}
-
-.blog-item h3, .besplatno-item h3 {
-  color: #ea9999;
-}
-
-.blog-item a, .besplatno-item a {
-  display: inline-block;
-  margin-top: 10px;
-  border: 2px solid #ea9999;
-  padding: 8px 20px;
-  color: #ea9999;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.blog-item a:hover, .besplatno-item a:hover {
-  background-color: #ea9999;
-  color: white;
-}
-
-/* ======== KONTAKT ======== */
-.kontakt-forma {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 1100px;
   text-align: left;
 }
 
-.kontakt-forma label {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #ea9999;
+.hero-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 40px;
 }
 
-.kontakt-forma input,
-.kontakt-forma textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+.hero-text {
+  max-width: 600px;
 }
 
-.kontakt-forma button {
-  margin-top: 15px;
-  background-color: #ea9999;
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 6px;
-  cursor: pointer;
+.signature {
+  font-family: "Brush Script MT", cursive;
+  color: #d4af37;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 20px;
   font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
   transition: 0.3s;
 }
 
-.kontakt-forma button:hover {
-  background-color: #d87a7a;
+.cta-button:hover {
+  background-color: #fff;
+  color: #ea9999;
 }
 
-/* ======== FOOTER ======== */
-footer {
-  background-color: #f8dede;
-  padding: 40px 20px;
+/* ===== FOOTER ===== */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f4cccc;
+  padding: 50px 20px;
   text-align: center;
 }
 
-.footer-icons a {
-  margin: 0 10px;
-  color: #ea9999;
-  font-size: 22px;
+.footer h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 5px 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
   transition: 0.3s;
 }
 
-.footer-icons a:hover {
-  color: #ffd700;
+.social-icons a:hover {
+  color: #ea9999;
 }
 
-/* ======== FORMA NEWSLETTER ======== */
+/* ===== NEWSLETTER ===== */
 .newsletter {
-  margin-top: 25px;
+  max-width: 400px;
 }
 
-.newsletter input {
-  width: 80%;
+.newsletter p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-form label {
+  text-align: left;
+  font-weight: 600;
+}
+
+.newsletter-form input {
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 4px;
   border: 1px solid #ccc;
-  margin: 5px 0;
 }
 
-.newsletter button {
-  display: block;
-  margin: 15px auto;
+.newsletter-button {
+  background-color: transparent;
+  color: #ea9999;
+  border: 2px solid #ea9999;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.newsletter-button:hover {
   background-color: #ea9999;
   color: white;
-  border: none;
-  padding: 10px 25px;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
-.newsletter button:hover {
-  background-color: #d87a7a;
-}
-
-/* ======== RESPONSIVE ======== */
-@media(max-width:768px) {
-  .hero {
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-content {
     flex-direction: column;
     text-align: center;
   }
-  .hero-text {
-    padding-right: 0;
+  .hero-image {
+    margin: 0 0 20px 0;
   }
-  nav ul {
+  .navbar {
     flex-direction: column;
-    gap: 10px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
