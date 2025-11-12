@@ -233,145 +233,128 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-/* ======== KONTAKT SEKCIJA ======== */
-.contact-section {
-  background-color: #fff6f6; /* svetla topla pozadina */
-  padding: 60px 20px;
+/* KONTAKT STRANICA */
+.kontakt-uvod {
+  background-color: #ea9999;
   text-align: center;
+  color: white;
+  padding: 60px 20px;
 }
 
-.contact-section h2 {
-  color: #333;
-  font-size: 2em;
+.kontakt-uvod h2 {
+  font-size: 32px;
   margin-bottom: 10px;
-}
-
-.contact-section p {
-  color: #555;
-  font-size: 1.1em;
-  margin-bottom: 40px;
-}
-
-/* Forma — KONTAKT */
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto 60px auto;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.05);
-}
-
-.contact-form label {
-  display: block;
-  text-align: left;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 6px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1em;
-  transition: all 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #ea9999;
-  outline: none;
-  box-shadow: 0 0 6px rgba(234,153,153,0.5);
-}
-
-.contact-form button {
-  background-color: transparent;
-  border: 2px solid #ea9999;
-  color: #ea9999;
-  font-size: 1em;
-  padding: 12px 25px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.contact-form button:hover {
+.kontakt-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #fffaf9;
+}
+
+.kontakt-info {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.kontakt-info h3 {
+  color: #ea9999;
+  margin-bottom: 15px;
+}
+
+.kontakt-info a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.kontakt-info a:hover {
+  color: #ea9999;
+}
+
+.kontakt-forma {
+  flex: 1 1 350px;
+}
+
+.kontakt-forma form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kontakt-forma input,
+.kontakt-forma textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.kontakt-forma button {
+  background-color: white;
+  border: 2px solid #ea9999;
+  color: #ea9999;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.kontakt-forma button:hover {
   background-color: #ea9999;
   color: white;
 }
 
-/* ======== NEWSLETTER ======== */
-.newsletter-section {
-  background-color: #fff;
-  padding: 50px 20px;
-  border-top: 2px solid #ea9999;
+/* NEWSLETTER */
+.newsletter {
   text-align: center;
+  background-color: #fff0f0;
+  padding: 60px 20px;
 }
 
-.newsletter-section h3 {
+.newsletter h3 {
   color: #333;
-  font-size: 1.8em;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.newsletter-section p {
-  color: #555;
-  margin-bottom: 30px;
-  font-size: 1.1em;
-}
-
-.newsletter-form {
-  max-width: 500px;
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
   margin: 0 auto;
-  text-align: left;
 }
 
-.newsletter-form label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: #444;
-}
-
-.newsletter-form input {
+.newsletter input {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1em;
-  transition: all 0.3s ease;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-.newsletter-form input:focus {
-  border-color: #ea9999;
-  box-shadow: 0 0 6px rgba(234,153,153,0.5);
-  outline: none;
-}
-
-.newsletter-form button {
-  background-color: transparent;
+.newsletter button {
+  background-color: white;
   border: 2px solid #ea9999;
   color: #ea9999;
-  font-size: 1em;
-  padding: 12px 25px;
-  border-radius: 6px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
   cursor: pointer;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  display: block;
-  margin: 0 auto;
+  transition: 0.3s;
 }
 
-.newsletter-form button:hover {
+.newsletter button:hover {
   background-color: #ea9999;
-  color: #fff;
+  color: white;
+  
 }
 
 /* ======== DRUŠTVENE MREŽE ======== */
