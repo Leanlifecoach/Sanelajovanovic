@@ -259,7 +259,7 @@ footer {
 
 .content-text {
     flex: 1;
-    text-align: left; /* tekst levo */
+    text-align: left;
     font-size: 18px;
     line-height: 1.7;
 }
