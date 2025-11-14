@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Sanela Jovanović</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font za potpis -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo-container">
+        <div class="logo">Sanela Jovanović</div>
+        <div class="logo-subtitle">LEAN LIFE COACH</div>
+    </div>
+
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="index.html">POČETNA</a></li>
+            <li><a href="o-meni.html">O MENI</a></li>
+            <li><a href="usluge.html">USLUGE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="besplatno.html">BESPLATNO</a></li>
+            <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger" onclick="document.getElementById('nav-menu').classList.toggle('show')">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+
+<!-- UVOD (ROZA POZADINA) -->
+<section class="page-intro">
+    <h1>KONTAKT</h1>
+    <p class="subtitle">Rado ću odgovoriti na sva tvoja pitanja.</p>
+</section>
+
+<!-- KONTAKT FORMA -->
+<section class="contact-container">
+
+    <h2>Pošalji poruku</h2>
+
+    <form action="https://formsubmit.co/sanelajovanovic90@hotmail.com" method="POST" class="contact-form">
+
+        <!-- FormSubmit opcije -->
+        <input type="hidden" name="_next" value="https://tvoje-korisnicko-ime.github.io/hvala.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required>
+
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="poruka">Vaša poruka:</label>
+        <textarea id="poruka" name="poruka" rows="5" required></textarea>
+
+        <button type="submit" class="btn-outline">POŠALJI</button>
+    </form>
+
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-container">
+
+    <h2>Prijava na newsletter</h2>
+
+    <p class="newsletter-text">
+        Ukoliko želite da na svoj email primate obaveštenja o novim blogovima,
+        programima i besplatnom sadržaju, prijavite se ovde.
+    </p>
+
+    <form action="https://formsubmit.co/sanelajovanovic90@hotmail.com" method="POST" class="newsletter-form">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nova newsletter prijava">
+
+        <label for="ime-news">Ime:</label>
+        <input type="text" id="ime-news" name="ime" required>
+
+        <label for="prezime-news">Prezime:</label>
+        <input type="text" id="prezime-news" name="prezime" required>
+
+        <label for="email-news">Email:</label>
+        <input type="email" id="email-news" name="email" required>
+
+        <button type="submit" class="btn-outline">PRIJAVI SE NA NEWSLETTER</button>
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Sanela Jovanović | Lean Life Coach</p>
+</footer>
+
+</body>
+</html>
