@@ -288,3 +288,51 @@ footer {
         text-align: center;
     }
 }
+/* ------------------------------- */
+/*  USLUGE — centriranje i razmak  */
+/* ------------------------------- */
+
+.services-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.service-item {
+    margin-bottom: 50px; /* veći razmak između programa */
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.service-item p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Dugme */
+.service-item .btn-outline {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 2px solid #c78f8f;
+    color: #c78f8f;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+}
+
+.service-item .btn-outline:hover {
+    background: #c78f8f;
+    color: white;
+}
