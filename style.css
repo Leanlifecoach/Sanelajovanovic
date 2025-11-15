@@ -396,34 +396,50 @@ footer {
     .blog-section {
         width: 90%;
 }
-   
-/* ------------------------------------------------------ */
-/*                    KONTAKT STRANICA                    */
-/* ------------------------------------------------------ */
+/* ========================================= */
+/*        KONTAKT – stil samo za ovu stranu  */
+/* ========================================= */
 
 .contact-section {
     width: 85%;
+    max-width: 1200px;
     margin: 60px auto;
+    text-align: center;
 }
 
+/* Dve kutije: forma + newsletter */
 .contact-wrapper {
     display: flex;
-    gap: 60px;
+    gap: 50px;
     justify-content: center;
+    align-items: flex-start;
 }
 
-.contact-form, .newsletter-box {
+/* Kutije */
+.contact-form,
+.newsletter-box {
     flex: 1;
-    background: var(--light-pink);
+    background: #f7dede; /* tvoja svetlija roze */
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
+/* Naslovi */
+.contact-form h2,
+.newsletter-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Polja */
 .contact-form label,
 .newsletter-box label {
     font-weight: bold;
-    margin: 10px 0 5px;
     display: block;
+    margin: 12px 0 6px;
+    text-align: left;
 }
 
 .contact-form input,
@@ -434,17 +450,19 @@ footer {
     border: 1px solid #bbb;
     border-radius: 8px;
     margin-bottom: 15px;
+    font-size: 16px;
 }
 
+/* Dugme */
 .btn-submit {
     padding: 12px 25px;
-    border: none;
-    background: var(--accent);
+    background: #c78f8f;
     color: white;
+    border: none;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .btn-submit:hover {
@@ -460,11 +478,26 @@ footer {
 .social-links a {
     margin: 0 12px;
     text-decoration: none;
-    color: var(--accent);
+    color: #c78f8f;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .social-links a:hover {
     text-decoration: underline;
 }
 
+/* ========= MOBILNA VERZIJA ========= */
+
+@media (max-width: 900px) {
+    .contact-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form label,
+    .newsletter-box label {
+        text-align: center;
+    }
+}       
+       
