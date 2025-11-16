@@ -247,6 +247,27 @@ footer {
 /*  O MENI — sekcija sa slikom i tekstom    */
 /* ---------------------------------------- */
 
+.index-wrapper {
+    width: 85%;
+    margin: 60px auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.index-img img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+}
+
 .content-wrapper {
     width: 80%;
     max-width: 1200px;
